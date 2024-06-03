@@ -1,18 +1,10 @@
 export const schemaGet = {
     type: 'object',
     properties: {
-        todos: {
-            type: 'array',
-            items: {
-                id: {type: 'number'},
-                todo: {type: 'string'},
-                completed: {type: 'boolean'},
-                userId: {type: 'number'},
-            }
-        },
-        total: {type: 'number'},
-        skip: {type: 'number'},
-        limit: {type: 'number'},
+        id: {type: 'number'},
+        todo: {type: 'string'},
+        completed: {type: 'boolean'},
+        userId: {type: 'number'}
     }
 }
 

@@ -2,14 +2,14 @@
   "stats": {
     "suites": 7,
     "tests": 5,
-    "passes": 4,
+    "passes": 5,
     "pending": 0,
-    "failures": 1,
-    "start": "2024-06-03T04:24:46.668Z",
-    "end": "2024-06-03T04:24:48.127Z",
-    "duration": 1459,
+    "failures": 0,
+    "start": "2024-06-03T04:30:07.250Z",
+    "end": "2024-06-03T04:30:08.711Z",
+    "duration": 1461,
     "testsRegistered": 5,
-    "passPercent": 80,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f9a44fa3-4caa-48f7-ad3e-bf142ec5f346",
+      "uuid": "dc0fff53-fdc0-403c-a16c-46f638fe399d",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "318e2ccc-64e7-4850-9e6d-31c8cd5a7af4",
+          "uuid": "37b37f59-a6a7-4b0c-aeeb-3350e76798fa",
           "title": "TODOS API TESTING",
           "fullFile": "C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\tests\\comments.spec.js",
           "file": "\\tests\\comments.spec.js",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "31d63e69-36e0-4c50-921e-d7f2ead0d92e",
+              "uuid": "4b3d6cb7-74ba-4b52-ab47-578f9fba915d",
               "title": "TD001 - Todos API TESTING",
               "fullFile": "C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\tests\\comments.spec.js",
               "file": "\\tests\\comments.spec.js",
@@ -47,39 +47,35 @@
                   "title": "Testing GET Todos API",
                   "fullTitle": "TODOS API TESTING TD001 - Todos API TESTING Testing GET Todos API",
                   "timedOut": false,
-                  "duration": 662,
-                  "state": "failed",
-                  "speed": null,
-                  "pass": false,
-                  "fail": true,
+                  "duration": 663,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
                   "pending": false,
                   "context": null,
                   "code": "const res = await axios.get('https://dummyjson.com/todos')\nexpect(res.data).to.be.jsonSchema(schemaGet)\n// console.log(res.data)",
-                  "err": {
-                    "message": "Error: strict mode: unknown keyword: \"todo\"",
-                    "estack": "Error: strict mode: unknown keyword: \"todo\"\n    at checkStrictMode (node_modules\\ajv\\dist\\compile\\util.js:174:15)\n    at checkUnknownRules (node_modules\\ajv\\dist\\compile\\util.js:32:13)\n    at alwaysValidSchema (node_modules\\ajv\\dist\\compile\\util.js:19:5)\n    at Object.code (node_modules\\ajv\\dist\\vocabularies\\applicator\\items.js:17:42)\n    at keywordCode (node_modules\\ajv\\dist\\compile\\validate\\index.js:464:13)\n    at C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\node_modules\\ajv\\dist\\compile\\validate\\index.js:222:17\n    at CodeGen.code (node_modules\\ajv\\dist\\compile\\codegen\\index.js:439:13)\n    at CodeGen.block (node_modules\\ajv\\dist\\compile\\codegen\\index.js:568:18)\n    at iterateKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:219:9)\n    at groupKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:200:13)\n    at C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\node_modules\\ajv\\dist\\compile\\validate\\index.js:192:13\n    at CodeGen.code (node_modules\\ajv\\dist\\compile\\codegen\\index.js:439:13)\n    at CodeGen.block (node_modules\\ajv\\dist\\compile\\codegen\\index.js:568:18)\n    at schemaKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:190:9)\n    at typeAndKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:128:5)\n    at subSchemaObjCode (node_modules\\ajv\\dist\\compile\\validate\\index.js:115:5)\n    at subschemaCode (node_modules\\ajv\\dist\\compile\\validate\\index.js:91:13)\n    at KeywordCxt.subschema (node_modules\\ajv\\dist\\compile\\validate\\index.js:438:9)\n    at applyPropertySchema (node_modules\\ajv\\dist\\vocabularies\\applicator\\properties.js:45:17)\n    at Object.code (node_modules\\ajv\\dist\\vocabularies\\applicator\\properties.js:33:17)\n    at keywordCode (node_modules\\ajv\\dist\\compile\\validate\\index.js:464:13)\n    at C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\node_modules\\ajv\\dist\\compile\\validate\\index.js:222:17\n    at CodeGen.code (node_modules\\ajv\\dist\\compile\\codegen\\index.js:439:13)\n    at CodeGen.block (node_modules\\ajv\\dist\\compile\\codegen\\index.js:568:18)\n    at iterateKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:219:9)\n    at groupKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:200:13)\n    at C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\node_modules\\ajv\\dist\\compile\\validate\\index.js:192:13\n    at CodeGen.code (node_modules\\ajv\\dist\\compile\\codegen\\index.js:439:13)\n    at CodeGen.block (node_modules\\ajv\\dist\\compile\\codegen\\index.js:568:18)\n    at schemaKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:190:9)\n    at typeAndKeywords (node_modules\\ajv\\dist\\compile\\validate\\index.js:128:5)\n    at C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\node_modules\\ajv\\dist\\compile\\validate\\index.js:70:9\n    at CodeGen.code (node_modules\\ajv\\dist\\compile\\codegen\\index.js:439:13)\n    at C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\node_modules\\ajv\\dist\\compile\\validate\\index.js:37:166\n    at CodeGen.code (node_modules\\ajv\\dist\\compile\\codegen\\index.js:439:13)\n    at CodeGen.func (node_modules\\ajv\\dist\\compile\\codegen\\index.js:587:18)\n    at validateFunction (node_modules\\ajv\\dist\\compile\\validate\\index.js:37:13)\n    at topSchemaObjCode (node_modules\\ajv\\dist\\compile\\validate\\index.js:62:5)\n    at validateFunctionCode (node_modules\\ajv\\dist\\compile\\validate\\index.js:21:13)\n    at Ajv.compileSchema (node_modules\\ajv\\dist\\compile\\index.js:80:45)\n    at Ajv._compileSchemaEnv (node_modules\\ajv\\dist\\core.js:473:37)\n    at Ajv.compile (node_modules\\ajv\\dist\\core.js:160:38)\n    at Ajv.validate (node_modules\\ajv\\dist\\core.js:151:22)\n    at Proxy.<anonymous> (node_modules\\chai-json-schema-ajv\\src\\index.js:26:23)\n    at Proxy.methodWrapper (file:///C:/Users/Agung%20Mahadipa/Downloads/Pro%20Sigmaka%20File/Mochawesome/node_modules/chai/chai.js:1591:25)\n    at Context.<anonymous> (file:///C:/Users/Agung%20Mahadipa/Downloads/Pro%20Sigmaka%20File/Mochawesome/tests/comments.spec.js:17:36)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
-                    "diff": null
-                  },
-                  "uuid": "3efcf5dd-6512-499a-a852-15589b165681",
-                  "parentUUID": "31d63e69-36e0-4c50-921e-d7f2ead0d92e",
+                  "err": {},
+                  "uuid": "bb79413f-feff-4edc-99e9-5bc3e7eb6ef7",
+                  "parentUUID": "4b3d6cb7-74ba-4b52-ab47-578f9fba915d",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
-              "passes": [],
-              "failures": [
-                "3efcf5dd-6512-499a-a852-15589b165681"
+              "passes": [
+                "bb79413f-feff-4edc-99e9-5bc3e7eb6ef7"
               ],
+              "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 662,
+              "duration": 663,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "2eea0689-f10e-4c76-b602-ebe1da3991bb",
+              "uuid": "d60d3f5b-e5a9-40d6-b463-0288d7612fd1",
               "title": "TD002 - TODOS API TESTING",
               "fullFile": "C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\tests\\comments.spec.js",
               "file": "\\tests\\comments.spec.js",
@@ -90,7 +86,7 @@
                   "title": "Testing POST Todos API",
                   "fullTitle": "TODOS API TESTING TD002 - TODOS API TESTING Testing POST Todos API",
                   "timedOut": false,
-                  "duration": 199,
+                  "duration": 198,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -99,26 +95,26 @@
                   "context": null,
                   "code": "const res = await axios.post('https://dummyjson.com/todos/add', {\n    todo: 'idk whattodo',\n    userId: 4\n})\nexpect(res.data).to.be.jsonSchema(schemaPost)\nconsole.log(res.data)",
                   "err": {},
-                  "uuid": "2a76d580-0d9b-49c6-90e2-53f75456edf1",
-                  "parentUUID": "2eea0689-f10e-4c76-b602-ebe1da3991bb",
+                  "uuid": "586d4cfd-71ad-4a9c-8be4-dd71f73c701b",
+                  "parentUUID": "d60d3f5b-e5a9-40d6-b463-0288d7612fd1",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "2a76d580-0d9b-49c6-90e2-53f75456edf1"
+                "586d4cfd-71ad-4a9c-8be4-dd71f73c701b"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 199,
+              "duration": 198,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "d7fbedab-580b-474a-b9c2-c1100c47fe6c",
+              "uuid": "6e34b773-de05-4700-b51e-22925eec5ad4",
               "title": "TD003 - TODOS API TESTING",
               "fullFile": "C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\tests\\comments.spec.js",
               "file": "\\tests\\comments.spec.js",
@@ -138,15 +134,15 @@
                   "context": null,
                   "code": "const res = await axios.put('https://dummyjson.com/todos/3', {\n    todo: 'hello world',\n    userId: 3\n})\nexpect(res.data).to.be.jsonSchema(schemaPut)\nconsole.log(res.data)",
                   "err": {},
-                  "uuid": "6b82d1d8-8a59-4326-8ddc-afd58545c33a",
-                  "parentUUID": "d7fbedab-580b-474a-b9c2-c1100c47fe6c",
+                  "uuid": "ad5607a4-675b-4d71-bf0c-6ac48284a717",
+                  "parentUUID": "6e34b773-de05-4700-b51e-22925eec5ad4",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "6b82d1d8-8a59-4326-8ddc-afd58545c33a"
+                "ad5607a4-675b-4d71-bf0c-6ac48284a717"
               ],
               "failures": [],
               "pending": [],
@@ -157,7 +153,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "f2cd44d6-2a7e-4503-9cf4-d1909c5b15d3",
+              "uuid": "8fe99dea-fa7a-483f-af9e-9179a998416a",
               "title": "TD004 - TODOS API TESTING",
               "fullFile": "C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\tests\\comments.spec.js",
               "file": "\\tests\\comments.spec.js",
@@ -168,7 +164,7 @@
                   "title": "Testing DELETE Todos API",
                   "fullTitle": "TODOS API TESTING TD004 - TODOS API TESTING Testing DELETE Todos API",
                   "timedOut": false,
-                  "duration": 195,
+                  "duration": 197,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -177,20 +173,20 @@
                   "context": null,
                   "code": "const res = await axios.delete('https://dummyjson.com/todos/3')\nexpect(res.data.isDeleted).to.equal(true)\nexpect(res.data).to.be.jsonSchema(schemaDelete)",
                   "err": {},
-                  "uuid": "fcafb630-d3d1-4dfd-b3d8-6244da88c21f",
-                  "parentUUID": "f2cd44d6-2a7e-4503-9cf4-d1909c5b15d3",
+                  "uuid": "7d4707f6-ac85-42d0-8f10-96a23f490d63",
+                  "parentUUID": "8fe99dea-fa7a-483f-af9e-9179a998416a",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "fcafb630-d3d1-4dfd-b3d8-6244da88c21f"
+                "7d4707f6-ac85-42d0-8f10-96a23f490d63"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 195,
+              "duration": 197,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -206,7 +202,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "4f261b2c-5d9f-40ba-a069-90b901f6e5b4",
+          "uuid": "9337702c-4302-405d-bc2c-2b19f6d43c63",
           "title": "LOGIN API TESTING",
           "fullFile": "C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\tests\\comments.spec.js",
           "file": "\\tests\\comments.spec.js",
@@ -215,7 +211,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "56d33492-ce3e-4fe0-9cb4-e9b78594c7e4",
+              "uuid": "4f7abb65-4102-4c87-8d7d-4f656361f224",
               "title": "LG001 - Testing Login credentials",
               "fullFile": "C:\\Users\\Agung Mahadipa\\Downloads\\Pro Sigmaka File\\Mochawesome\\tests\\comments.spec.js",
               "file": "\\tests\\comments.spec.js",
@@ -235,15 +231,15 @@
                   "context": null,
                   "code": "const auth = await axios.post('https://dummyjson.com/auth/login', {\n    username: 'emilys',\n    password: 'emilyspass',\n})\nawait axios.create({\n    baseURL: 'https://dummyjson.com/auth/me',\n    headers: {\n        'Authorization': `Bearer ${auth.data.token}`\n    }\n})\nexpect(auth.data).to.be.jsonSchema(schemaLogin)",
                   "err": {},
-                  "uuid": "67653c76-ea1e-4969-8df7-ed987571f198",
-                  "parentUUID": "56d33492-ce3e-4fe0-9cb4-e9b78594c7e4",
+                  "uuid": "6a38ea08-fb4f-48e7-9b97-33109a219ba4",
+                  "parentUUID": "4f7abb65-4102-4c87-8d7d-4f656361f224",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "67653c76-ea1e-4969-8df7-ed987571f198"
+                "6a38ea08-fb4f-48e7-9b97-33109a219ba4"
               ],
               "failures": [],
               "pending": [],

@@ -26,7 +26,7 @@ describe('TODOS API TESTING', function() {
                 userId: 4
             })
             expect(res.data).to.be.jsonSchema(schemaPost)
-            console.log(res.data)
+            // console.log(res.data)
         })
     })
     
@@ -37,7 +37,7 @@ describe('TODOS API TESTING', function() {
                 userId: 3
             })
             expect(res.data).to.be.jsonSchema(schemaPut)
-            console.log(res.data)
+            // console.log(res.data)
         })
     })
     describe('TD004 - TODOS API TESTING', function() {
