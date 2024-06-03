@@ -48,3 +48,20 @@ describe('TODOS API TESTING', function() {
         })
     })
 })
+
+describe('LOGIN API TESTING', function(){
+    describe('LG001 - Testing Login credentials', function(){
+        it('Login with registered username and password', async function(){
+            const auth = await axios.post('https://dummyjson.com/auth/login', {
+                username: 'emilys',
+                password: 'emilyspass',
+            })
+            await axios.create({
+                baseURL: 'https://dummyjson.com/auth/me',
+                headers: {
+                    'Authorization': `Bearer ${auth.data.token}`
+                }
+            })
+        })
+    })
+})
