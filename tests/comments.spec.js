@@ -2,7 +2,7 @@ import axios from "axios";
 import * as chai from "chai";
 import chaiJsonSchemaAjv from "chai-json-schema-ajv";
 
-import { schemaGet, schemaPut, schemaPost } from "../schemas/comments-schema.js";
+import { schemaGet, schemaPut, schemaPost, schemaDelete } from "../schemas/comments-schema.js";
 
 chai.use(chaiJsonSchemaAjv)
 
@@ -15,7 +15,7 @@ describe('TODOS API TESTING', function() {
         it('Testing GET Todos API', async function () {
             const res = await axios.get('https://dummyjson.com/todos')
             expect(res.data).to.be.jsonSchema(schemaGet)
-            console.log(res.data)
+            // console.log(res.data)
         })
     })
     
@@ -31,13 +31,20 @@ describe('TODOS API TESTING', function() {
     })
     
     describe('TD003 - TODOS API TESTING', function() {
-        it('Testing PUT Todos API', function () {
-            const res = axios.put('https://dummyjson.com/todos/1', {
+        it('Testing PUT Todos API', async function () {
+            const res = await axios.put('https://dummyjson.com/todos/3', {
                 todo: 'hello world',
                 userId: 3
             })
             expect(res.data).to.be.jsonSchema(schemaPut)
             console.log(res.data)
+        })
+    })
+    describe('TD004 - TODOS API TESTING', function() {
+        it('Testing DELETE Todos API', async function () {
+            const res = await axios.delete('https://dummyjson.com/todos/3')
+            expect(res.data.isDeleted).to.equal(true)
+            expect(res.data).to.be.jsonSchema(schemaDelete)
         })
     })
 })
