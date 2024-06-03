@@ -1,0 +1,7 @@
+{
+    "reporter": "mochawesome",
+    "reporter-option": [
+        "reportDir=testing-reports",
+        "reportFilename=api_test_report"
+    ]
+}
