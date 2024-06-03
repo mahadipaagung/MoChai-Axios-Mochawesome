@@ -45,3 +45,12 @@ export const schemaDelete = {
         isDeleted: {type: 'boolean'}
     }
 }
+
+export const schemaLogin = {
+    type: 'object',
+    properties: {
+        id: {type: 'number'},
+        username: {type: 'string'},
+        email: {type: 'string'}
+    }
+}

@@ -2,7 +2,7 @@ import axios from "axios";
 import * as chai from "chai";
 import chaiJsonSchemaAjv from "chai-json-schema-ajv";
 
-import { schemaGet, schemaPut, schemaPost, schemaDelete } from "../schemas/comments-schema.js";
+import { schemaGet, schemaPut, schemaPost, schemaDelete, schemaLogin } from "../schemas/comments-schema.js";
 
 chai.use(chaiJsonSchemaAjv)
 
@@ -62,6 +62,7 @@ describe('LOGIN API TESTING', function(){
                     'Authorization': `Bearer ${auth.data.token}`
                 }
             })
+            expect(auth.data).to.be.jsonSchema(schemaLogin)
         })
     })
 })
